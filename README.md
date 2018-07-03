@@ -7,3 +7,4 @@ Solved Problem List:
 - Roman to Integer
 - Valid Parentheses
 - Merge Two Sorted Lists
+- Remove Duplicates from Sorted Array
