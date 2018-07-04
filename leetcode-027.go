@@ -4,23 +4,23 @@ import (
 	"fmt"
 )
 
-func removeDuplicates(nums []int) int {
+func removeElement(nums []int, val int) int {
 	if(len(nums) == 0) {
 		return 0
 	}
 	count := 0
 	for i := 0; i < len(nums); i++ {
-		if(nums[i] != nums[count]) {
-			count++
+		if(nums[i] != val) {
 			nums[count] = nums[i]
+			count++
 		}
 	}
-	return count+1
+	return count
 }
 
 func main() {
-	arr := []int{1,1,2}
-	l := removeDuplicates(arr)
+	arr := []int{0,1,2,2,3,0,4,2}
+	l := removeElement(arr, 2)
 	for i := 0; i < l; i++ {
 		fmt.Println(arr[i])
 	}
