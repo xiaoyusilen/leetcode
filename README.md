@@ -12,3 +12,4 @@ Solved Problem List:
     - Remove Element
     - Implement strStr()
     - Search Insert Position
+    - Count and Say
