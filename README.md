@@ -6,6 +6,7 @@ Solved Problem List:
     - Reverse Integer
     - Palindrome Number
     - Roman to Integer
+    - Longest Common Prefix
     - Valid Parentheses
     - Merge Two Sorted Lists
     - Remove Duplicates from Sorted Array
@@ -13,3 +14,6 @@ Solved Problem List:
     - Implement strStr()
     - Search Insert Position
     - Count and Say
+    - Maximum Subarray
+    - Length of Last Word
+    - Plus One
