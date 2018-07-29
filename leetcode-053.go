@@ -2,17 +2,24 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
-func maxSubArray(nums []int) int {
-	max_end := nums[0]
-	max_len := nums[0]
-	for i := 1; i < len(nums); i++ {
-		max_end = int(math.Max(float64(nums[i]), float64(max_end+nums[i])))
-		max_len = int(math.Max(float64(max_len), float64(max_end)))
+func getMax(a, b int) int {
+	if a > b {
+		return a
 	}
-	return max_len
+	return b
+}
+
+// 题解：http://xiaoyu.world/Algo/leetcode-014&053/
+
+func maxSubArray(nums []int) int {
+	sum, max := nums[0], nums[0]
+	for i := 1; i < len(nums); i++ {
+		sum = getMax(nums[i], sum + nums[i])
+		max = getMax(sum, max)
+	}
+	return max
 }
 
 func main() {
